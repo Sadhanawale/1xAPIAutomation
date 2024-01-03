@@ -1,11 +1,16 @@
 #add your constant here
+BASE_URL = "https://restful-booker.herokuapp.com"
 
-class APIConstant(object):
+def base_url():
+    return "https://restful-booker.herokuapp.com"
+
+class APIConstants(object):
+
    @staticmethod
-   def base_url(self):
+   def base_url():
        return "https://restful-booker.herokuapp.com"
    @staticmethod
-   def url_create_booking(self):
+   def url_create_booking():
        return "https://restful-booker.herokuapp.com/booking"
    @staticmethod
    def  url_create_token():
